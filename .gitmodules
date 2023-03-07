@@ -1,0 +1,3 @@
+[submodule "tiago-companion"]
+	path = tiago-companion
+	url = https://github.com/elisabeth-ms/tiago-companion.git
