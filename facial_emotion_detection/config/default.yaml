@@ -1,0 +1,1 @@
+input_image_topic: $(arg input_image_topic)

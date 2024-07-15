@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="node_name" default="facial_emotion_detector"/>
+  <arg name="input_image_topic" default="/camera/image_raw"/>
+  
+  <node name="$(arg node_name)" pkg="facial_emotion_detection" type="facial_emotion_detection_node.py" output="screen">
+    <rosparam command="load" file="$(find facial_emotion_detection)/config/default.yaml" subst_value="true"/>
+  </node>
+</launch>
